@@ -1,0 +1,19 @@
+.container-articles{
+  margin-top: 30px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+
+
+}
+
+.articles_others{
+  margin-left: 90px;
+}
+
+header {
+
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+}
