@@ -5,6 +5,8 @@ import { BigCardComponent } from '../components/big-card/big-card.component';
 import { MenuTitleComponent } from '../components/menu-title/menu-title.component';
 import { SmallCardComponent } from '../components/small-card/small-card.component';
 import { MenuBarComponent } from '../components/menu-bar/menu-bar.component';
+import { ContentComponent } from './content/content.component';
+import { RouterLink, RouterModule } from '@angular/router';
 
 
 
@@ -14,10 +16,12 @@ import { MenuBarComponent } from '../components/menu-bar/menu-bar.component';
     MenuTitleComponent,
     BigCardComponent,
     SmallCardComponent,
-    MenuBarComponent
+    ContentComponent
   ],
   imports: [
     CommonModule,
+    RouterModule
+
   ],
   exports: [HomeComponent, MenuTitleComponent]
 })

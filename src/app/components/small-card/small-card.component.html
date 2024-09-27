@@ -2,10 +2,10 @@
 
   <div class="small-card-content-container">
     <div class="small-card-photo">
-      <img src="https://media.nngroup.com/media/articles/opengraph_images/Placeholders-Social-Posts_2019.png" alt="sem imagem" height="600px" >
+      <img src="{{cardPhoto}}" alt="sem imagem" height="600px" >
     </div>
     <div class="small-card-title">
-      <a href="#">Saiu a nova versão do Angular</a>
+      <a [routerLink]="['content',id]">{{cardTitle}}</a>
 
     </div>
   </div>

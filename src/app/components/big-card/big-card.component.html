@@ -1,16 +1,13 @@
 <div class="big-card-container">
   <div class="big-card-photo">
-    <img src="https://www.deque.com/wp-content/uploads/2019/06/Picture1.png" alt="sem imagem" height="600px" >
+    <img src="{{cardPhoto}}" alt="sem imagem" height="600px" >
   </div>
   <div class="big-card-title">
-    <a href="#">Saiu a nova versão do Angular</a>
+    <a [routerLink]="['content', id]">{{cardTitle}}</a>
   </div>
   <div class="big-card-description">
     <p>
-      <a href="#">Lorem ipsum litora hac tellus dictum hac
-         fames facilisis aliquam scelerisque eget,
-         est tellus vel fames quis.
-          </a>
+      <a [routerLink]="['content', id]">{{cardDescription}}</a>
     </p>
 
   </div>

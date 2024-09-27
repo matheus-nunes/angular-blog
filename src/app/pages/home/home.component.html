@@ -1,16 +1,31 @@
-<header>
-  <app-menu-bar></app-menu-bar>
-</header>
+
 
 <app-menu-title></app-menu-title>
 <div class="container-articles">
   <div class="articles_main">
-    <app-big-card></app-big-card>
+    <app-big-card
+    [cardPhoto]="'https://w0.peakpx.com/wallpaper/663/660/HD-wallpaper-iron-man-minimal-iron-man-minimalism-minimalist-superheroes-digital-art-artist.jpg'"
+    [cardDescription]="'Marvel acaba de Lançar o novo filme do Homem de Ferro'"
+    [cardTitle]="'Novo filme do Homem de Ferro'"
+    [id]="1"
+    ></app-big-card>
   </div>
   <div class="articles_others">
-    <app-small-card></app-small-card>
-    <app-small-card></app-small-card>
-    <app-small-card></app-small-card>
+    <app-small-card
+    [cardPhoto]="'https://media.nngroup.com/media/articles/opengraph_images/Placeholders-Social-Posts_2019.png'"
+    [cardTitle]="'Saiu a Nova versão do Angular'"
+    [id]="2"
+    ></app-small-card>
+    <app-small-card
+    [cardPhoto]="'https://media.nngroup.com/media/articles/opengraph_images/Placeholders-Social-Posts_2019.png'"
+    [cardTitle]="'Saiu a Nova versão do React'"
+    [id]="3"
+    ></app-small-card>
+    <app-small-card
+    [cardPhoto]="'https://media.nngroup.com/media/articles/opengraph_images/Placeholders-Social-Posts_2019.png'"
+    [cardTitle]="'Saiu a Nova versão do Vue'"
+    [id]="4"
+    ></app-small-card>
   </div>
 </div>
 
